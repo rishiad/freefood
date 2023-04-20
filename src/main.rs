@@ -4,7 +4,7 @@ mod models;
 mod dal;
 mod bll;
 mod tests;
-
+mod utils;
 use actix_web::{web, App, HttpResponse, HttpServer};
 use std::{env, io::Result};
 use tracing::{event, Level};
