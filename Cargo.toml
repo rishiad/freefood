@@ -30,3 +30,5 @@ serde = { version = "1.0.159", features = ["derive"]}
 sqlx = { version = "0.6.3", features = [ "mysql", "runtime-tokio-native-tls", "chrono" ] }
 validator = { version = "0.16", features = ["derive"] }
 serde_json = "1.0.84"
+
+jsonwebtoken = "8.3.0"

@@ -1,8 +1,7 @@
 use serde::{Serialize};
-use crate::models::user::User;
 
 
-#[derive(Debug, Serialize, sqlx::FromRow)]
+#[derive(Debug, Serialize, sqlx::FromRow, Clone)]
 pub struct Event {
     pub id: i32,
     pub name: String,
@@ -16,4 +15,6 @@ pub struct Event {
     pub end_time: chrono::DateTime<chrono::Utc>,
     pub users_attending: Vec<i32>,
 }
+
+
 
